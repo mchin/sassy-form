@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--Angular-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>-->
+
+</head>
+
+    <body>
+    <center>
+<h3>Friends of the San Francisco Independent Living Skills Program (Friends of SFILSP)<br/>
+Grant Application<br/>2016-2017</h3></center>
+
+<form id="a-form">
+  <h3>Personal Information</h3>
+    <div class="form-group col-xs-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="">
+    </div>
+    <div class="form-group col-xs-2">
+      <label for="dob">Date of Birth</label>
+      <input class="form-control" type="date" value="" id="dob">
+    </div>
+    <div class="form-group col-xs-4">
+      <label for="records">County/State that has your foster records </label>
+      <input type="text" class="form-control" id="records" placeholder="">
+    </div>
+    <div class="form-group col-xs-6">
+      <label for="address">Address </label>
+      <input type="text" class="form-control" id="address" placeholder="">
+    </div>
+    <div class="form-group col-xs-2">
+      <label for="address">Apt # </label>
+      <input type="text" class="form-control" id="address" placeholder="">
+    </div>
+    <div class="form-group col-xs-4">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" placeholder="">
+    </div>
+    <div class="form-group col-xs-4">
+      <label for="state">State</label>
+      <input type="text" class="form-control" id="state" placeholder="">
+    </div>
+    <div class="form-group col-xs-4">
+      <label for="zip">Zip </label>
+      <input type="text" class="form-control" id="zip" placeholder="">
+    </div>
+    <div class="form-group col-xs-4">
+  <label for="phone">Phone</label>
+
+    <input class="form-control" type="tel" value="" id="phone">
+  </div>
+  <div class="form-group col-xs-4">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="">
+</div>
+  <div class="form-group col-xs-4">
+    <label for="ename">Emergency Contact Name</label>
+    <input type="text" class="form-control" id="ename" placeholder="">
+  </div>
+  <div class="form-group col-xs-4">
+<label for="ephone">Emergency Contact Phone</label>
+  <input class="form-control" type="tel" value="" id="ephone">
+</div>
+
+<div class="form-group col-xs-4">
+  <label for="children">Number of Children</label>
+    <input class="form-control" type="number" value="" id="children">
+  </div>
+  <div class="form-group col-xs-4">
+    <label for="kids-ages">Ages of Children (separated by commas)</label>
+      <input class="form-control" type="number" value="" id="children-ages">
+</div>
+
+
+<div class="form-group col-xs-12">
+
+  <label for="kids-ages">Income Source(s) (Check all that apply):</label>
+<div class="row">
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Mesmer" name="Checkbox[]">Work</label>
+  </div>
+  <div class="col-sm-8">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Guardian" name="Checkbox[]">General Assistance (GA)</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Ranger" name="Checkbox[]">Calworks/TANF</label>
+  </div>
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Elementalist" name="Checkbox[]">Social Security</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Ranger" name="Checkbox[]">SSI</label>
+  </div>
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Elementalist" name="Checkbox[]">Financial Aid</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Ranger" name="Checkbox[]">PAES</label>
+  </div>
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Elementalist" name="Checkbox[]">Scholarships</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Ranger" name="Checkbox[]">Disability (DIB)</label>
+  </div>
+  <div class="col-sm-8">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Elementalist" name="Checkbox[]">Other (Please Specify)
+    <input type="text" class="" aria-label="Text input with checkbox"></label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Ranger" name="Checkbox[]">Unemployment (UIB)</label>
+  </div>
+</div>
+</div>
+
+<div class="form-group col-xs-12">
+<label for="kids-ages">How will you use this grant? (Check all that apply): </label>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" value="">
+    Tuition or Fees
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Books or other learning aids
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Tutoring
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Non-housing living expense such as food, transportation, laundry etc. (please specify)
+</label>
+  <input type="text" class="form-control " aria-label="Text input with checkbox">
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Rent
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Room or dorm costs at school
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Security deposit or first and last month's rent
+    </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Utilities
+    </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Furnishings (please specify)
+  </label>
+  <input type="text" class="form-control col-xs-12" aria-label="Text input with checkbox">
+
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+   Other costs associated with becoming independent and self-sufficient (please specify)
+</label>
+<input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+</div>
+
+<div class="form-group col-xs-4">
+    <label for="exampleInputAmount">How much money are you requesting? </label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount (in dollars)">
+      <div class="input-group-addon">.00</div>
+    </div>
+</div>
+
+  <div class="form-group col-xs-8">
+    <label for="name">To whom should the check be made out to:</label>
+    <input type="text" class="form-control" id="name" placeholder="">
+  </div>
+
+<br style="clear:both"/>
+
+<h3>Education and Employment</h3>
+
+
+
+  <div class="form-group col-xs-4">
+    <label for="exampleSelect1">What is the highest level of education you have completed? </label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Please select:</option>
+      <option>Some high school</option>
+      <option>High school diploma / GED </option>
+      <option>Some college</option>
+      <option>Associate's Degree</option>
+      <option>Bachelor's Degree</option>
+      <option>Master's Degree</option>
+    </select>
+  </div>
+
+  <div class="form-group col-xs-8">
+  <label for="kids-ages">Are you currently (check all that apply):  </label>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="">
+      A full-time student
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="">
+      A part-time student
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="">
+      Employed full-time
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="">
+      Employed part-time
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="">
+      Unemployed
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="">
+      Other (explain):
+      <input type="text" class="form-control" aria-label="Text input with checkbox">
+    </label>
+  </div>
+</div>
+
+  <div class="form-group col-xs-5">
+    <label for="school">What is the name of the school you attend?</label>
+    <input type="text" class="form-control" id="school" placeholder="">
+  </div>
+
+  <div class="form-group col-xs-7">
+    <label for="major">What is your major or what are you studying? </label>
+    <input type="text" class="form-control" id="major" placeholder="">
+  </div>
+
+  <div class="form-group col-xs-12">
+    <label for="goal">What is your educational or career goal? </label>
+    <input type="text" class="form-control" id="goal" placeholder="">
+  </div>
+
+  <div class="form-group col-xs-12">
+    <label for="future">If you are not currently in school, but are planning to get more education, please give us the name of the college/university/vocational school you plan to attend and when you will begin: </label>
+    <input type="text" class="form-control" id="future" placeholder="">
+  </div>
+
+  <div class="form-group col-xs-12">
+    <label for="work">If employed, where do you work?  </label>
+    <input type="text" class="form-control" id="work" placeholder="">
+  </div>
+
+<h3>Extra-Curricular, Community Activities, and Awards</h3>
+
+Please list your involvement in any service organizations, religious groups, political work, sports teams, etc.  List your current or most recent activity first. Include any awards received.
+<br style="clear:both"/><br style="clear:both"/>
+
+<table class="table table-bordered table-condensed">
+     <tbody>
+       <tr>
+         <td class="center">Activity</td>
+         <td class="center">Organization & Location</td>
+         <td class="center">Description of Activities</td>
+         <td class="center">Dates (Month/Year)</td>
+       </tr>
+       <tr>
+         <td><input type="text" class="form-control" /></td>
+         <td><input type="text" class="form-control" /></td>
+         <td><input type="text" class="form-control" /></td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+         <td><input type="text" class="form-control" /></td>
+         <td><input type="text" class="form-control" /></td>
+         <td><input type="text" class="form-control" /></td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+     </tbody>
+   </table>
+
+
+
+
+<h3>Personal Essay    (2 page limit)    	</h3>
+Please tell us about your personal, educational and career goals.  How would this grant help you to achieve your goal of supporting yourself?  How has your experience in foster care affected these goals?  Please limit to 2 pages.<br/><br/>
+<div class="form-group">
+  <label for="exampleInputFile">Please upload the file below by clicking Choose File.</label>
+  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+  <small id="fileHelp" class="form-text text-muted">Accepted formats are .doc, .docx, .pdf, </small>
+</div>
+
+<h3>Your Needs and Expenses</h3>
+
+Please complete the budget form for your request. Please remember that all of your income will be checked by us. Please make sure to include all of your monthly income as well as your expenses. Please contact us if you have questions. Please make sure to attach the following:
+<br/><br/>
+<ol>
+<li>Proof of your income (pay stubs or most recent stub of benefits you receive)  </li>
+<li>Documentation of your need, including the original bills and/or receipts  </li>
+<li>Proof of other sources of financial support, including scholarships and financial aid. If other requests for financial support have been denied, please provide proof. </li>
+<li>Proof that you are enrolled in school and how much you pay for tuition </li>
+</ol>
+
+<div class="form-group">
+  <label for="exampleInputFile">Please upload the files below by clicking Choose File.</label>
+  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+  <small id="fileHelp" class="form-text text-muted">Accepted formats are .doc, .docx, .pdf, </small>
+</div>
+
+<br style="clear:both"/><br style="clear:both"/>
+<h3>Your Monthly Report</h3>
+<p>Part 1 - Your Income</p>
+
+<table class="table table-bordered table-condensed">
+     <tbody>
+       <tr>
+         <td class="bold">Your Monthly Income</td>
+         <td class="bold">What You Get</td>
+       </tr>
+       <tr>
+         <td>Monthly Money from Work </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+         <td>Monthly Money from Benefits</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Monthly Food Stamp Benefits </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Total Monthly Income (Box 1)</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td> </td>
+         <td> </td>
+       </tr>
+       <tr>
+         <td class="bold">Your Financial Aid/Scholarship </td>
+         <td class="bold">What You Get </td>
+       </tr>
+       <tr>
+         <td>Financial Aid Received for this year </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Scholarships  Received this Year (add sheet if necessary) </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Total Annual Financial Aid/Scholarships </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td><strong>Total Monthly Financial Aid/Scholarships (Box 2)</strong><br/>
+ (divide ‘Total Annual Financial Aid/Scholarships’ by 12)
+ </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td> </td>
+         <td> </td>
+       </tr>
+       <tr>
+         <td class="bold">Grand Total Monthly Income <br/>(please add the amounts from Box 1 and Box 2 above)
+      </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+     </tbody>
+   </table>
+
+<p>Part II - Your Expenses</p>
+
+<table class="table table-bordered table-condensed">
+     <tbody>
+       <tr>
+         <td class="bold">Your Educational Expenses</td>
+         <td class="bold">What You Pay</td>
+       </tr>
+       <tr>
+         <td>Tuition for the year </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+         <td>Rent or Dorm fees for this year</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Books for the year </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Other educational costs </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Total Annual Education Expenses</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Total Monthly Education Expenses (Box 3)<br/>
+(divide ‘Total Annual Education Expenses’ by 12)
+</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Your Monthly Living Expenses</td>
+         <td class="bold">What You Pay </td>
+       </tr>
+       <tr>
+         <td>Utility Bill – PG&E </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Phone Bill</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Food</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Transportation</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td>Other-please list here:</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Total Monthly Living Expenses (Box 4)</td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+
+       <tr>
+         <td><strong>Total Monthly Financial Aid/Scholarships (Box 4)</strong><br/>
+ (divide ‘Total Annual Financial Aid/Scholarships’ by 12)
+ </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td> </td>
+         <td> </td>
+       </tr>
+       <tr>
+         <td class="bold">Grand Total Monthly Expenses <br/>(please add the amounts from Box 3 and Box 4 above)
+      </td>
+         <td><input type="text" class="form-control" /></td>
+       </tr>
+     </tbody>
+   </table>
+
+<p>Part III – Your Unmet Need Expenses</p>
+
+<table class="table table-bordered table-condensed">
+     <tbody>
+       <tr>
+         <td class="bold">Grand Total Income<br/>
+(this should equal ‘Grand Total Monthly Income’  from Part I)
+</td>
+        <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Grand Total Expenses<br/>
+(this should equal ‘Grand Total Monthly Expenses’ from Part II)
+</td>
+        <td><input type="text" class="form-control" /></td>
+       </tr>
+       <tr>
+         <td class="bold">Grand Total Unmet Need<br/>
+(amount you need to earn or somehow make up every month)
+</td>
+          <td><input type="text" class="form-control" /></td>
+       </tr>
+     </tbody>
+   </table>
+
+<fieldset class="form-group col-xs-12">
+  <label>Have you applied for the Chafee grant?	</label>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+      Yes
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+      No
+</label>
+  </div>
+</fieldset>
+
+<fieldset class="form-group col-xs-12">
+  <label>Are you requesting funds for this particular need from another agency?    	</label>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+      Yes
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+      No
+</label>
+  </div>
+</fieldset>
+<div class="form-group col-xs-12">
+  <label for="status">If so, from where and what is the status of this request?  </label>
+  <input type="text" class="form-control" id="status" placeholder="">
+</div>
+
+<h3>References</h3>
+
+Please submit the name, address, email, and telephone number for two references who can speak on your behalf. These can be teachers, current or former employers, case workers, your CASA worker, etc.  Please, no relatives or friends.
+
+<br style="clear:both"/>
+<br style="clear:both"/>
+
+<div class="form-group col-xs-6">
+  <label for="refname1">  Reference 1 Name:  </label>
+  <input type="text" class="form-control" id="refname1" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="refname1-relation">  Relationship to you (employer, CASA, etc.):  </label>
+  <input type="text" class="form-control" id="refname1-relation" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="refname1-address">  Address:  </label>
+  <input type="text" class="form-control" id="refname1-address" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+<label for="phone">Phone</label>
+
+<input class="form-control" type="tel" value="1-(555)-555-5555" id="refname1-phone">
+</div>
+<div class="form-group col-xs-6">
+<label for="email">Email address</label>
+<input type="email" class="form-control" id="refname1-email" aria-describedby="emailHelp" placeholder="">
+
+</div>
+<br style="clear:both"><br style="clear:both">
+<div class="form-group col-xs-6">
+  <label for="refname1">  Reference 2 Name:  </label>
+  <input type="text" class="form-control" id="refname2" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="refname1-relation">  Relationship to you (employer, CASA, etc.):  </label>
+  <input type="text" class="form-control" id="refname2-relation" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="refname1-address">  Address:  </label>
+  <input type="text" class="form-control" id="refname2-address" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+<label for="phone">Phone</label>
+
+<input class="form-control" type="tel" value="1-(555)-555-5555" id="refname2-phone">
+</div>
+<div class="form-group col-xs-6">
+<label for="email">Email address</label>
+<input type="email" class="form-control" id="refname2-email" aria-describedby="emailHelp" placeholder="">
+
+</div>
+<br style="clear:both"><br style="clear:both">
+<h3>Authorization for release of information to the Friends of SFILSP</h3>
+
+<div class="form-group form-inline">
+  <label for="auth-name"></label> I,
+  <input type="text" class="form-control" id="app-name" placeholder="">
+  an applicant to the Friends of San Francisco Independent Living Skills Program Grant, do hereby authorize
+  <input type="text" class="form-control" id="auth-name" placeholder=""> to furnish income verification information, including  salary, fringe benefits, work schedule, financial aid, and public assistance to the Friends of  the San Francisco Independent Living Skills Program.  This information will be maintained in confidence and is for the sole use of verifying income.  My signature below indicates that I have been informed and understand the information contained on this form.
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="auth-name">Participant Signature</label>
+  <input type="text" class="form-control" id="app-name-sig" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="signed-date">Date</label>
+  <input class="form-control" type="date" value="" id="signed-date">
+</div>
+
+<strong><u>Please sign only one of the statements below.</u></strong> <i>Your decision will not affect your eligibility for a grant.</i>
+
+<br/><br/>
+I <strong>DO GIVE PERMISSION</strong> to use my name and information in telling donors and other people about the Friends of SFILSP.
+
+<div class="form-group col-xs-6">
+  <label for="auth-name">Participant Signature</label>
+  <input type="text" class="form-control" id="app-name-sig" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="signed-date">Date</label>
+  <input class="form-control" type="date" value="" id="signed-date">
+</div>
+<br style="clear:both"><br style="clear:both">
+I <strong>DO NOT GIVE PERMISSION</strong> to use my name and information, <u>except for income verification information as described above</u>, in telling donors and other people about the Friends of SFILSP.
+
+<div class="form-group col-xs-6">
+  <label for="auth-name">Participant Signature</label>
+  <input type="text" class="form-control" id="app-name-sig" placeholder="">
+</div>
+
+<div class="form-group col-xs-6">
+  <label for="signed-date">Date</label>
+  <input class="form-control" type="date" value="" id="signed-date">
+</div>
+<br/>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+
+    </body>
+</html>
