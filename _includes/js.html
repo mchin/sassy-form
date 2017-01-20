@@ -6,3 +6,72 @@
 
     <!-- Plugin JavaScript -->
     <script src="{{ "/js/jquery.easing.min.js" }}"></script>
+
+    <script>
+    //'keyup' to trigger the computation as the user types
+    $('.income, .aid, .total-monthly-aid').keyup(function () {
+
+        // initialize the sum (total price) to zero
+        var incomeSum = 0;
+        var aidSum = 0;
+
+        // we use jQuery each() to loop through all the textbox with 'income' class
+        // and compute the sum for each loop
+        $('.income').each(function() {
+            incomeSum += Number($(this).val());
+        });
+
+        // set the computed value to 'total-income' textbox
+         $('.total-income').val(incomeSum);
+
+
+        $('.aid').each(function() {
+            aidSum += Number($(this).val());
+        });
+
+        // set the computed value to 'total-income' textbox
+        $('.total-aid').val(aidSum);
+
+        var updatedSum = aidSum / 12;
+
+        $('#total-monthly-aid').val(updatedSum);
+
+
+        var grandTotal = incomeSum + updatedSum;
+          //console.log("total income: " + totalIncome);
+            //console.log("total aid: " + totalMonthlyAid);
+              //  console.log("grand: " + grandTotal);
+
+        $('#grand-total-income').val(grandTotal);
+
+
+    });
+/*    //'keyup' to trigger the computation as the user types
+    $('.aid, .total-monthly-aid').keyup(function () {
+
+        // initialize the sum (total price) to zero
+        var sum = 0;
+
+        // we use jQuery each() to loop through all the textbox with 'income' class
+        // and compute the sum for each loop
+        $('.aid').each(function() {
+            sum += Number($(this).val());
+        });
+
+        // set the computed value to 'total-income' textbox
+        $('.total-aid').val(sum);
+
+        var updatedSum = sum / 12;
+
+        var totalMonthlyAid = $('#total-monthly-aid').val(updatedSum);
+        console.log("new sum: " + updatedSum);
+
+
+    });
+
+          $('#grand-total-income').val(totalIncome + totalMonthlyAid);
+
+
+*/
+
+    </script>

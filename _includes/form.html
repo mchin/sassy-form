@@ -2,11 +2,11 @@
 <h3>Friends of the San Francisco Independent Living Skills Program (Friends of SFILSP)<br/>
 Grant Application<br/>2016-2017</h3></center>
 
-<form id="a-form">
+<form method="post" action="/../send_attachments.php" enctype="multipart/form-data" id="a-form">
   <h3>Personal Information</h3>
     <div class="form-group col-xs-6">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="">
+      <input type="text" class="form-control" id="name" placeholder=""name="name">
     </div>
     <div class="form-group col-xs-2">
       <label for="dob">Date of Birth</label>
@@ -199,7 +199,7 @@ Grant Application<br/>2016-2017</h3></center>
     <div class="input-group">
       <div class="input-group-addon">$</div>
       <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount (in dollars)">
-      <div class="input-group-addon">.00</div>
+      <!--div class="input-group-addon">.00</div-->
     </div>
 </div>
 
@@ -347,7 +347,7 @@ Please complete the budget form for your request. Please remember that all of yo
 
 <div class="form-group">
   <label for="exampleInputFile">Please upload the files below by clicking Choose File.</label>
-  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" name="file[]">
   <small id="fileHelp" class="form-text text-muted">Accepted formats are .doc, .docx, .pdf, </small>
 </div>
 
@@ -366,21 +366,33 @@ Please complete the budget form for your request. Please remember that all of yo
      <tbody>
        <tr>
          <td>Monthly Money from Work </td>
-         <td><input type="text" class="form-control" /></td>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control income" id="income-work" placeholder="Amount (in dollars)">
+         </div></td>
        </tr>
        <tr>
        </tr>
        <tr>
          <td>Monthly Money from Benefits</td>
-         <td><input type="text" class="form-control" /></td>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control income" id="income-benefits" placeholder="Amount (in dollars)">
+         </div></td>
        </tr>
        <tr>
          <td>Monthly Food Stamp Benefits </td>
-         <td><input type="text" class="form-control" /></td>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control income" id="income-food" placeholder="Amount (in dollars)">
+         </div></td>
        </tr>
        <tr>
          <td class="bold">Total Monthly Income (Box 1)</td>
-         <td><input type="text" class="form-control" /></td>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control total-income" id="total-income" placeholder="Amount (in dollars)">
+         </div></td>
        </tr>
        <tr>
          <td>&nbsp; </td>
@@ -392,22 +404,30 @@ Please complete the budget form for your request. Please remember that all of yo
        </tr>
        <tr>
          <td>Financial Aid Received for this year </td>
-         <td><input type="text" class="form-control" /></td>
-       </tr>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control aid" id="aid" placeholder="Amount (in dollars)">
+         </div></td>       </tr>
        <tr>
-         <td>Scholarships  Received this Year (add sheet if necessary) </td>
-         <td><input type="text" class="form-control" /></td>
-       </tr>
+         <td>Scholarships Received this Year (add sheet if necessary) </td>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control aid" id="scholarships" placeholder="Amount (in dollars)">
+         </div></td>       </tr>
        <tr>
          <td class="bold">Total Annual Financial Aid/Scholarships </td>
-         <td><input type="text" class="form-control" /></td>
-       </tr>
+         <td><div class="input-group">
+           <div class="input-group-addon">$</div>
+           <input type="text" class="form-control total-aid" id="total-aid" placeholder="Amount (in dollars)">
+         </div></td>       </tr>
        <tr>
          <td><strong>Total Monthly Financial Aid/Scholarships (Box 2)</strong><br/>
  (divide ‘Total Annual Financial Aid/Scholarships’ by 12)
  </td>
-         <td><input type="text" class="form-control" /></td>
-       </tr>
+ <td><div class="input-group">
+   <div class="input-group-addon">$</div>
+   <input type="text" class="form-control total-monthly-aid" id="total-monthly-aid" placeholder="Amount (in dollars)">
+ </div></td>       </tr>
        <tr>
          <td>&nbsp;</td>
          <td>&nbsp; </td>
@@ -415,8 +435,10 @@ Please complete the budget form for your request. Please remember that all of yo
        <tr>
          <td class="bold">Grand Total Monthly Income <br/>(please add the amounts from Box 1 and Box 2 above)
       </td>
-         <td><input type="text" class="form-control" /></td>
-       </tr>
+      <td><div class="input-group">
+        <div class="input-group-addon">$</div>
+        <input type="text" class="form-control grand-total-income" id="grand-total-income" placeholder="">
+      </div></td>          </tr>
      </tbody>
    </table>
 
