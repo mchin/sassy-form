@@ -9,11 +9,13 @@
 
     <script>
     //'keyup' to trigger the computation as the user types
-    $('.income, .aid, .total-monthly-aid').keyup(function () {
+    $('.income, .aid, .total-monthly-aid, .education, .living').keyup(function () {
 
         // initialize the sum (total price) to zero
         var incomeSum = 0;
         var aidSum = 0;
+        var educationSum = 0;
+        var monthlyLivingSum = 0;
 
         // we use jQuery each() to loop through all the textbox with 'income' class
         // and compute the sum for each loop
@@ -24,54 +26,42 @@
         // set the computed value to 'total-income' textbox
          $('.total-income').val(incomeSum);
 
-
         $('.aid').each(function() {
             aidSum += Number($(this).val());
         });
 
-        // set the computed value to 'total-income' textbox
+        // set the computed value to 'total-aid' textbox
         $('.total-aid').val(aidSum);
 
-        var updatedSum = aidSum / 12;
+        var updatedAidSum = aidSum / 12;
 
-        $('#total-monthly-aid').val(updatedSum);
+        $('#total-monthly-aid').val(updatedAidSum);
 
-
-        var grandTotal = incomeSum + updatedSum;
-          //console.log("total income: " + totalIncome);
-            //console.log("total aid: " + totalMonthlyAid);
-              //  console.log("grand: " + grandTotal);
+        var grandTotal = incomeSum + updatedAidSum;
 
         $('#grand-total-income').val(grandTotal);
 
 
-    });
-/*    //'keyup' to trigger the computation as the user types
-    $('.aid, .total-monthly-aid').keyup(function () {
-
-        // initialize the sum (total price) to zero
-        var sum = 0;
-
-        // we use jQuery each() to loop through all the textbox with 'income' class
-        // and compute the sum for each loop
-        $('.aid').each(function() {
-            sum += Number($(this).val());
+        //set computed value to 'education' textboxes
+        $('.education').each(function() {
+            educationSum += Number($(this).val());
         });
 
-        // set the computed value to 'total-income' textbox
-        $('.total-aid').val(sum);
+        // set the computed value to 'total-education' textbox
+         $('.total-education').val(educationSum);
 
-        var updatedSum = sum / 12;
+         var updatedEducationSum = educationSum / 12;
 
-        var totalMonthlyAid = $('#total-monthly-aid').val(updatedSum);
-        console.log("new sum: " + updatedSum);
+         $('#total-monthly-education').val(updatedEducationSum);
 
+         //set computed value to 'living' textboxes
+          $('.living').each(function() {
+          monthlyLivingSum += Number($(this).val());
+          });
+
+          // set the computed value to 'total living' textbox
+          $('.total-living').val(monthlyLivingSum);
 
     });
-
-          $('#grand-total-income').val(totalIncome + totalMonthlyAid);
-
-
-*/
 
     </script>
